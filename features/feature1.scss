@@ -1,0 +1,128 @@
+/* Este styles es la base de la interacción entre edificios y la selección, la capa de los edificios va asi:
+    Top:    .edificio
+    Mid:    imagen
+    Bottom: .e-container  */
+
+@mixin medidas {
+    display: flex;
+    width: 100vw;
+    height: 40vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin posC1 {
+    top: 25%;
+    left: 20%;
+}
+
+@mixin posC2 {
+    top: 10%;
+    left: 15%;
+}
+
+
+
+.container {
+    z-index: 1;
+    
+    position: absolute;
+    @include medidas();
+}
+
+.e-container {
+    z-index: 20;
+    opacity: .4;
+    background-color: white;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    filter: contrast(20);
+}
+
+.edificio {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 16vw;
+    height: 16vw;
+    background-color: rgba(255, 0, 0);
+    filter: blur(10px);
+}
+
+.e1 {
+    position: absolute;
+    @include posC1();
+    z-index: 1;
+}
+
+.e2 {
+    
+    position: absolute;
+    @include posC2();
+
+    z-index: 1;
+}
+
+.mapa {
+    opacity: 1;
+    z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mapa {
+    opacity: 1;
+    z-index: 10;
+    object-fit: contain;
+    filter: drop-shadow(-1vw -1vw 1vw rgba(0, 0, 0, .3));
+    width: 80%;
+    height: 80%;
+} */
+
+.mapaCont1 {
+    
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.mapaCont2 {
+    
+    position: absolute;
+    @include posC2();
+}
+
+/* 
+.mov {
+    animation: move 3s linear infinite;
+    top: 12%;
+    left: 23%;
+} */
+/* 
+@keyframes move {
+    0% {
+        left: 23%;
+    }
+
+    50% {
+        left: 43% + 40%;
+    }
+
+    100% {
+        left: 23%;
+    }
+} */
