@@ -44,7 +44,7 @@ export const Navbar = ({ setSection }) => {
             <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-primary px-5 py-1 border-dark border-bottom border-4">
 
                 <a className="navbar-brand fw-bold d-flex align-items-center" href="#">
-                    <img src="mapa/Logo.svg" alt="" width="45" className="d-inline-block pb-1" />
+                    <img src="../mapa/Logo.svg" alt="" width="45" className="d-inline-block pb-1" />
                     <h1 className="mb-1 ms-2 fs-2 fw-bolder">NavegaTec</h1>
                 </a>
 
