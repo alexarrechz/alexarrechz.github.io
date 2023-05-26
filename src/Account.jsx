@@ -35,9 +35,7 @@ export const Account = () => {
                         <li className="list-group-item"> <label className="form-label fs-6 me-1">{profileData.Nombre}</label>
                         </li>
                         <li className="list-group-item"> <label className="form-label fs-6 me-1">{profileData.Apellido}</label>
-                        </li>
-                        <li className="list-group-item"> <label className="form-label fs-6 me-1">Carrera</label>
-                        </li>
+                        </li>        
                         <li className="list-group-item"> <label className="form-label fs-6 me-1">{profileData.Id_usuario}</label>
                         </li>
                     </ul>

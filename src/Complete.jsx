@@ -14,7 +14,6 @@ export const Complete = ({setLoged, setMustComplete}) => {
         const name = inputName.current.value.trim();
         const family = inputFamily.current.value.trim();
         const phone = inputPhone.current.value.trim();
-        const major = inputMajor.current.value.trim();
         const pass = inputPass.current.value.trim();
         const confirmPass = inputConfirmPass.current.value.trim();
 
@@ -24,8 +23,6 @@ export const Complete = ({setLoged, setMustComplete}) => {
             return console.log("Apellido vacío");
         if (phone.length == 0)
             return console.log("Número vacío");
-        if (major.length == 0)
-            return console.log("Carrera vacía");
         if (pass.length == 0)
             return console.log("Contraseña vacía");
         if (confirmPass.length == 0)
@@ -78,7 +75,7 @@ export const Complete = ({setLoged, setMustComplete}) => {
                         </div>
                         <h1 className="text-center fs-4 text-dark fw-bold" style={{ width: '80%' }}>Inicio de sesión</h1>
                         <div className="d-flex flex-wrap justify-content-center m-2">
-                            <div className="text-center p-2 d-flex flex-wrap" style={{ width: '90%' }}>
+                            <div className="text-center p-2 justify-content-center d-flex flex-wrap" style={{ width: '90%' }}>
                                 <div className="mx-2 input-group mt-4 dropShadowCustom rounded-4 border-dark border border-4 login2">
                                     <div className="input-group-text">
                                         <img src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png" style={{ height: '1rem' }} />
@@ -96,12 +93,6 @@ export const Complete = ({setLoged, setMustComplete}) => {
                                         <img src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png" style={{ height: '1rem' }} />
                                     </div>
                                     <input ref={inputPhone} className="form-control" type="number" placeholder="Teléfono" />
-                                </div>
-                                <div className="mx-2 dropShadowCustom input-group mt-4 rounded-4 border-dark border border-4 login2">
-                                    <div className="input-group-text">
-                                        <img src="https://cdn.icon-icons.com/icons2/2483/PNG/512/user_icon_149851.png" style={{ height: '1rem' }} />
-                                    </div>
-                                    <input ref={inputMajor} className="form-control" type="text" placeholder="Carrera" />
                                 </div>
                                 <div className="mx-2 dropShadowCustom input-group mt-4 rounded-4 border-dark border border-4 login2">
                                     <div className="input-group-text">
