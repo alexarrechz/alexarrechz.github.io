@@ -13,7 +13,7 @@ export const Map = () => {
 		const handleClick = async (event) => {
 			if (event.target.classList.contains("edificio")) {
 				const clickedDiv = event.target;
-				const divId = clickedDiv.id.substring(clickedDiv.id.indexOf("_")+1);
+				const divId = clickedDiv.id.substring(clickedDiv.id.indexOf("_") + 1);
 				// Acceder a los elementos de la carta usando referencias
 				const carta_name = document.getElementById("main-card_name");
 				//const carta_subtitle = document.getElementById("main-card_subtitle");
@@ -111,11 +111,10 @@ export const Map = () => {
 
 	return (
 		<>
-			<div className="p-2 " style={{ minWidth: "320px", flex: "2" }}>
-				<div className="bg-primary d-flex flex-grow-1 align-items-center border-dark border border-4 rounded m-0 dropShadowCustom"
-					style={{ height: "75vh" }}>
-					<div ref={mapContainerRef} id="map-container" className="bg-success hScroll"
-						style={{ cursor: "move", position: "relative", top: "0", left: "0", flex: "2", boxSizing: "border-dark border-box", height: "100%", overflow: "scroll" }}>
+			<div id="main_map" className="p-2 " style={{ minWidth: "320px", flex: "2" }}>
+				<div id="map_container_container"
+					className="bg-primary d-flex flex-grow-1 align-items-center border-dark border border-4 rounded m-0 dropShadowCustom">
+					<div ref={mapContainerRef} id="map-container" className="map_container bg-success hScroll">
 						<div className="map_div" id="map_div">
 							<div id="edificio_1" className="edificio edificio_1"></div>
 							<div id="edificio_2" className="edificio edificio_2"></div>
