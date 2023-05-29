@@ -24,8 +24,6 @@ export const FullAd = ({ unLoadFullAd, Nombre, Contacto, Descripcion, Horario, I
                 <div className="pe-3 text-center anuncio-principal h-auto">
                     <img src={Imagen}
                         className="m-3 rounded-1 card-img-top border border-dark " alt="no_img" />
-                    <img src="http://www.trbimg.com/img-592d9aa4/turbine/ct-eat-this-2017-burritos-half-acre-tap-room-20170530"
-                        className="m-3 rounded-1 card-img-top border border-dark " alt="no_img" />
                 </div>
             </div>
         </>
